@@ -1,0 +1,24 @@
+.header-nav{
+    display: none;
+}
+
+@media (min-width: 576px) {
+    /* Styles for small devices */
+}
+
+@media (min-width: 768px) {
+    /* Styles for medium devices */
+}
+
+@media (min-width: 992px) {
+    .header-mobile{
+        display: none;
+    }
+    .header-nav{
+        display: block;
+    }
+}
+
+@media (min-width: 1200px) {
+    /* Styles for extra large devices */
+}
