@@ -187,14 +187,12 @@ label {
 }
 
 .hero-ctn__title{
-    width: 500px;
     color: #080415;
     font-size: 8.0rem;
     font-weight: 500;
 }
 
 .hero-ctn__desc{
-    width: 370px;
     color: #51586A;
     font-size: 1.8rem;
     font-weight: 400;
@@ -272,6 +270,7 @@ label {
     line-height: 1.25; /* 125% */
     letter-spacing: -1.28px;
     padding: 15px 42px;
+    text-align: center;
 }
 
 .service-item__desc{
@@ -281,6 +280,7 @@ label {
     font-weight: 400;
     line-height: 1.3;
     padding: 0 42px;
+    text-align: center;
 }
 
 .service-box__line{
@@ -387,7 +387,7 @@ label {
     font-style: normal;
     font-weight: 400;
     line-height: 30px; /* 166.667% */
-    width: 570px;
+    max-width: 570px;
     margin: 20px 0px 50px;
 }
 
