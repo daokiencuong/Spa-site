@@ -1,7 +1,7 @@
 
 # Spa-site
 
-This is project build one static website use HTML, CSS. Use grid system 12 column and a little skill to responsive this site. This is my first product, so it have a lot of bug in code, and code is so confused.
+This is project build one static website use HTML, CSS. Use grid system 12 columns and a little skill to responsive this site. This is my first product, so it has a lot of code bugs, and code is so confusing.
 
 
 
