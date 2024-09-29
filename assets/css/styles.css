@@ -40,7 +40,7 @@ label {
 
 .header__logo{
     color: #080415;
-    font-size: 22px;
+    font-size: clamp(1.5rem, 1.5vw + 1rem, 2.2rem);
     font-style: normal;
     font-weight: 500;
     line-height: 1.36; /* 136.364% */
@@ -61,6 +61,7 @@ label {
 }
 
 .book_now{
+    font-size: clamp(1.4rem, 1vw + 1rem, 1.8rem);;
     padding: 12px 30px;
     background-color: var(--base-color);
     color: #fff;
@@ -94,6 +95,10 @@ label {
     margin-top: 8px;
     border-radius: 2px;
     background-color: #51586A;
+}
+
+.header-mobile__item:first-of-type{
+    margin-top: 0;
 }
 
 .header-mobile__checkbox {
@@ -160,27 +165,33 @@ label {
     margin: 75px 0px;
 }
 
-.hero-media{
+.hero-media {
     display: flex;
     align-items: center;
+    justify-content: center; /* Căn giữa ảnh trong hero-media */
     filter: drop-shadow(2px 2px 15px rgba(91, 91, 91, 0.5));
+    position: relative; /* Để cho các ảnh có thể sử dụng position: relative; */
 }
 
-.hero-media__img:nth-child(1){
-    width: 330px;
-    height: 540px;
+.hero-media__img {
     border-radius: 6px;
     object-fit: cover;
-    position: relative;
+    position: relative; /* Giữ vị trí tương đối */
 }
 
-.hero-media__img:nth-child(2){
-    width: 210px;
-    height: 410px;
-    border-radius: 6px;
-    object-fit: cover;
-    margin-left: -5px;
+/* Ảnh đầu tiên */
+.hero-media__img:nth-child(1) {
+    width: 330px; /* Kích thước cố định */
+    height: 540px; /* Kích thước cố định */
 }
+
+/* Ảnh thứ hai */
+.hero-media__img:nth-child(2) {
+    width: 210px; /* Kích thước cố định */
+    height: 410px; /* Kích thước cố định */
+    margin-left: -5px; /* Vị trí fix cho ảnh thứ hai */
+}
+
 
 .hero-ctn{
     margin-top: 20px;
@@ -188,20 +199,20 @@ label {
 
 .hero-ctn__title{
     color: #080415;
-    font-size: 8.0rem;
+    font-size: clamp(5rem, 5vw + 3rem, 8rem);
     font-weight: 500;
 }
 
 .hero-ctn__desc{
     color: #51586A;
-    font-size: 1.8rem;
+    font-size: clamp(1.5rem, 1vw + 1rem, 1.8rem);
     font-weight: 400;
     margin: 20px 0px 50px;
 }
 
 .hero-ctn-func__more{
     color: #080415;
-    font-size: 18px;
+    font-size:  clamp(1.4rem, 1vw + 1rem, 1.8rem);
     font-weight: 700;
     margin-left: 30px;
     transition: color .5s;
@@ -219,7 +230,7 @@ label {
 }
 
 .hero-ctn-social__title{
-    font-size: 16px;
+    font-size: 1.6rem;
     font-style: normal;
     font-weight: 500;
     line-height: 1.87; /* 187.5% */
@@ -237,7 +248,7 @@ label {
 
 .service-box__title{
     color: #080415;
-    font-size: 56px;
+    font-size: clamp(4rem, 4vw + 2.25rem, 5.6rem);
     font-style: normal;
     font-weight: 500;
     line-height: 1.17; /* 117.857% */
@@ -247,7 +258,7 @@ label {
 
 .service-box__desc{
     margin: 10px auto 70px;
-    width: 534px;
+    max-width: 534px;
     color: #51586A;
     text-align: center;
     font-size: 18px;
