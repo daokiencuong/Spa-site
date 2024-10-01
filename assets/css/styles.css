@@ -195,6 +195,7 @@ label {
     width: 210px; /* Kích thước cố định */
     height: 410px; /* Kích thước cố định */
     margin-left: -5px; /* Vị trí fix cho ảnh thứ hai */
+    z-index: -1;
 }
 
 
