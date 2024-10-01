@@ -56,6 +56,11 @@ label {
     transition: color .5s;
 }
 
+.header-nav__item--bold{
+    font-weight: 600;
+    color: #000;
+}
+
 .header-nav__item:hover{
     color: #080415;
 }
