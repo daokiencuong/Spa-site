@@ -120,13 +120,17 @@
                     </div>
                     <nav class="header-nav">
                         <a href="./index.html" class="header-nav__item">Home</a>
-                        <a href="./about.html" class="header-nav__item header-nav__item--bold"
+                        <a href="./about.html" class="header-nav__item"
                             >About</a
                         >
                         <a href="./services.html" class="header-nav__item"
                             >Services</a
                         >
-                        <a href="./contact_us.html" class="header-nav__item">Contact Us</a>
+                        <a
+                            href="./contact_us.html"
+                            class="header-nav__item header-nav__item--bold"
+                            >Contact Us</a
+                        >
                         <a href="#!" class="header-nav__item book_now"
                             >Book Now</a
                         >
@@ -146,16 +150,24 @@
                             ><div class="header-mobile__blur"></div
                         ></label>
                         <nav class="header-mobile-nav">
-                            <a href="./index.html" class="header-mobile-nav__item"
+                            <a
+                                href="./index.html"
+                                class="header-mobile-nav__item"
                                 >Home</a
                             >
-                            <a href="./about.html" class="header-mobile-nav__item"
+                            <a
+                                href="./about.html"
+                                class="header-mobile-nav__item"
                                 >About</a
                             >
-                            <a href="./services.html" class="header-mobile-nav__item"
+                            <a
+                                href="./services.html"
+                                class="header-mobile-nav__item"
                                 >Service</a
                             >
-                            <a href="./contact_us.html" class="header-mobile-nav__item"
+                            <a
+                                href="./contact_us.html"
+                                class="header-mobile-nav__item"
                                 >Contact Us</a
                             >
                             <a href="#!" class="header-mobile-nav__item"
@@ -168,90 +180,87 @@
         </header>
 
         <main>
-            <div class="abs">
+            <div class="contactus">
                 <div class="container">
-                    <div class="abs-box">
-                        <div class="abs__title">About</div>
-                        <div class="abs__dash"></div>
-                        <p class="abs__desc">
-                            Brockville Regal Nails Salon & Spa is founded in
-                            2024, committed to crafting stunning transformations
-                            with the power of eco-friendly products and
-                            sustainable practices in a clean environment at
-                            affordable prices.
+                    <div class="contactus-box">
+                        <h2 class="contactus__tittle">Contact Us</h2>
+                        <p class="contactus__desc">
+                            If you have any comments, questions or concerns,
+                            please feel free to send us a message!<br />
+                            <br />
+                            If you are trying to book an appointment, please
+                            include your name, phone number and service you
+                            would like to book and we will get back to you as
+                            soon as possible! You can also try booking an
+                            appointment online using the button below. Thank you
                         </p>
-                    </div>
-                </div>
-                <div class="quote-box">
-                    <div class="quote-container">
-                        <blockquote class="quote-text">
-                            “Our goal is to provide a place that each and every
-                            client who passes through the doors of our salon
-                            walks out feeling better than they did walk in.”
-                        </blockquote>
-                        <cite class="quote-author"
-                            >- Brockville Regal Nails Salon & Spa</cite
-                        >
-                    </div>
-                </div>
-                <div class="container">
-                    <div class="arow">
-                        <div class="row">
-                            <div class="aquality col-md-6 col-12">
-                                <h2 class="aitem__title">Quality</h2>
-                                <div class="aitem__desc">
-                                    At Brockville Regal Nail Salon & Spa, we took
-                                    the time to find the best products in the
-                                    industry for you. We carry…
+                        <div class="contactus-action">
+                            <div class="row">
+                                <div class="col-lg-5 col-12">
+                                    <div class="contactus-form">
+                                        <form id="emailForm">
+                                            <label
+                                                for="title"
+                                                class="contactus-form__lbtittle"
+                                                >Email subject</label
+                                            ><br />
+                                            <input
+                                                type="text"
+                                                id="title"
+                                                name="title"
+                                                required
+                                                class="contactus-form__iptittle"
+                                                placeholder=""
+                                            /><br /><br />
+
+                                            <label
+                                                for="body"
+                                                class="contactus-form__lbmain"
+                                                >Your message</label
+                                            ><br />
+                                            <textarea
+                                                id="body"
+                                                name="body"
+                                                required
+                                                class="contactus-form__ipmain"
+                                            ></textarea
+                                            ><br /><br />
+
+                                            <button
+                                                type="submit"
+                                                class="contactus-form__submit"
+                                            >
+                                                Send Email...
+                                            </button>
+                                        </form>
+                                    </div>
                                 </div>
-                                <ul class="aitem-list">
-                                    <li class="aitem-item">
-                                        DC gel polish & regular polish
-                                    </li>
-                                    <li class="aitem-item">CND shellac</li>
-                                    <li class="aitem-item">OPI gel polish</li>
-                                    <li class="aitem-item">
-                                        Nugenesis Dip powders
-                                    </li>
-                                    <li class="aitem-item">Bio Gel</li>
-                                    <li class="aitem-item">Solar Gel</li>
-                                    <li class="aitem-item">Acrylic</li>
-                                </ul>
-                            </div>
-                            <div class="aclean col-md-6 col-12">
-                                <h2 class="aitem__title">Clean</h2>
-                                <div class="aitem__desc">
-                                    In order to maintain a clean and safe
-                                    environment,
-                                    <span class="about-bold">disposable</span>
-                                    files, buffers, slippers, gloves and toe
-                                    separators are
-                                    <span class="about-bold">thrown out after</span>
-                                    one use.
-                                </div>
-                                <div class="aitem__desc">
-                                    Furthermore, we use
-                                    <span class="about-bold"
-                                        >PREempt (Accel) CS20 and PREempt RTU
-                                        Disinfectant</span
-                                    >, a hospital grade sterilizer and high level
-                                    disinfectant, as well as isopropyl alcohol for
-                                    all pedicure tubs, shared surfaces, furnitures,
-                                    and reusable tools after every client.
+                                <div class="col-lg-5 offset-lg-2 col-12">
+                                    <div class="contactus-cta">
+                                        <div class="contactus-cta__title">
+                                            Book your appointment today!
+                                        </div>
+                                        <a href="#!">
+                                            <span class="contactus-cta__btn">Book Now</span>
+                                        </a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="arow">
-                        <div class="row">
-                            <div class="apayment col-12">
-                                <div class="aitem__title">Payment</div>
-                                <div class="aitem__desc">
-                                    At Regal Nails & Spa Brockville, we accept:
-                                    Debit, Visa, Mastercard and Cash for payment.
-                                    However, tips are cash only!
-                                </div>
-                            </div>
+                        <div class="contactus__mapdesc">
+                            We are located in 1942 Parkedale Ave, Brockville, ON
+                            K6V 7N4, Canada
+                        </div>
+                        <div class="contactus__map">
+                            <iframe
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2840.1155563000416!2d-75.68588822901067!3d44.615112208763726!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4ccd0fc618bea525%3A0xd2b24e1d4a82730a!2sRegal%20Nails%2C%20Salon%20%26%20Spa!5e0!3m2!1svi!2s!4v1727859111910!5m2!1svi!2s"
+                                width="100%"
+                                height="550"
+                                style="border: 0"
+                                allowfullscreen=""
+                                loading="lazy"
+                                referrerpolicy="no-referrer-when-downgrade"
+                            ></iframe>
                         </div>
                     </div>
                 </div>
@@ -311,7 +320,8 @@
                             ><a
                                 href="https://maps.app.goo.gl/njMjuuaUmubifWWBA"
                                 target="_blank"
-                                >1942 Parkedale Ave, Brockville, ON K6V 7N4, Canada</a
+                                >1942 Parkedale Ave, Brockville, ON K6V 7N4,
+                                Canada</a
                             >
                         </div>
                         <div class="footer-column__part">
@@ -322,9 +332,7 @@
                         </div>
                         <div class="footer-column__part">
                             <span>Phone: </span
-                            ><a href="tel: +14372698903">
-                                +1 437-269-8903</a
-                            >
+                            ><a href="tel: +14372698903"> +1 437-269-8903</a>
                         </div>
                     </div>
                 </div>
@@ -334,5 +342,25 @@
                 </div>
             </div>
         </footer>
+
+        <script>
+            document
+                .getElementById("emailForm")
+                .addEventListener("submit", function (e) {
+                    e.preventDefault(); // Ngăn chặn form gửi mặc định
+
+                    // Lấy giá trị từ form
+                    const title = document.getElementById("title").value;
+                    const body = document.getElementById("body").value;
+
+                    // Tạo liên kết mailto
+                    const mailtoLink = `mailto:regalnailsbrockville@gmail.com?subject=${encodeURIComponent(
+                        title
+                    )}&body=${encodeURIComponent(body)}`;
+
+                    // Mở trình gửi mail
+                    window.location.href = mailtoLink;
+                });
+        </script>
     </body>
 </html>
