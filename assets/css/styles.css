@@ -423,8 +423,13 @@ label {
     justify-content: space-between;
 }
 
+.footer-column{
+    padding: 0px 15px;
+}
+
 .footer-column:nth-child(1){
     width: 267px;
+    padding-left: 0;
 }
 
 .footer-column__title{
