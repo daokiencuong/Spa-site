@@ -16,6 +16,10 @@
     .hero-media__img:nth-child(2){
         display: none;
     }
+
+    .footer-column{
+        padding-left: 0;
+    }
 }
 
 @media (max-width: 991.98px){

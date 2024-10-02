@@ -680,6 +680,7 @@ label {
     border-radius: 7px;
     padding: 0px 7px;
     font-family: inherit;
+    font-size: 1.6rem;
 }
 
 .contactus-form__lbmain{
@@ -697,6 +698,7 @@ label {
     padding: 5px 7px;
     font-family: inherit;
     resize: vertical;
+    font-size: 1.6rem;
 }
 
 .contactus-form__submit{
