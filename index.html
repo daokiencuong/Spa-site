@@ -278,9 +278,9 @@
                                             Natural Nails
                                         </h3>
                                         <p class="service-item__desc">
-                                            Lorem ipsum dolor sit amet, solor
-                                            adipiscing elit. Non nisl solor ut
-                                            elementum turpis.
+                                            Including regular or shellac
+                                            manicures and pedicure without the
+                                            need for artificial nails.
                                         </p>
                                     </section>
                                 </div>
@@ -295,9 +295,10 @@
                                             Nail Enhancements
                                         </h3>
                                         <p class="service-item__desc">
-                                            Lorem ipsum dolor sit amet, solor
-                                            adipiscing elit. Non nisl solor ut
-                                            elementum turpis.
+                                            Including nail extensions, overlays,
+                                            and various techniques like dip
+                                            powder, bio gel, hybrid gel, solar
+                                            gel and acrylic.
                                         </p>
                                     </section>
                                 </div>
@@ -312,9 +313,8 @@
                                             Waxing
                                         </h3>
                                         <p class="service-item__desc">
-                                            Lorem ipsum dolor sit amet, solor
-                                            adipiscing elit. Non nisl solor ut
-                                            elementum turpis.
+                                            Including facial waxing, body
+                                            waxing, and tinting.
                                         </p>
                                     </section>
                                 </div>
@@ -348,7 +348,7 @@
                                 <div class="col-lg-6 col-12">
                                     <div class="work-box-media__item">
                                         <img
-                                            src="./assets/img/demo_4.jpg"
+                                            src="./assets/img/regal_img.jpg"
                                             alt=""
                                             class="work-box-media__img"
                                         />
@@ -357,7 +357,7 @@
                                 <div class="col-lg-6 col-12">
                                     <div class="work-box-media__item">
                                         <img
-                                            src="./assets/img/demo_5.jpg"
+                                            src="./assets/img/IMG_2833.png"
                                             alt=""
                                             class="work-box-media__img"
                                         />
@@ -368,7 +368,7 @@
                                 <div class="col-lg-6 col-12">
                                     <div class="work-box-media__item">
                                         <img
-                                            src="./assets/img/demo_7.jpg"
+                                            src="./assets/img/IMG_7676.png"
                                             alt=""
                                             class="work-box-media__img"
                                         />
@@ -377,7 +377,7 @@
                                 <div class="col-lg-6 col-12">
                                     <div class="work-box-media__item">
                                         <img
-                                            src="./assets/img/demo_6.jpg"
+                                            src="./assets/img/IMG_8049.PNG"
                                             alt=""
                                             class="work-box-media__img"
                                         />
@@ -387,6 +387,10 @@
                         </div>
                     </div>
                 </div>
+            </div>
+            <div class="img-overlay" id="imgOverlay">
+                <span class="close-btn" onclick="closeOverlay()">×</span>
+                <img id="overlayImg" src="" alt="full" />
             </div>
             <div class="cta">
                 <div class="container">
@@ -401,12 +405,10 @@
                             Book now to get great deals...
                         </h2>
                         <p class="cta-box__desc">
-                            Lorem ipsum dolor sit amet consectetur adipisicing
-                            elit. Ipsa ipsam ducimus repellat nulla culpa alias
-                            eveniet qui vitae saepe temporibus nostrum officiis
-                            quidem, sapiente et, incidunt deleniti sequi
-                            nesciunt maiores eum. Commodi, fugit cumque amet
-                            facere eveniet laudantium minus eligendi!
+                            Step into the world of elegance with our signature
+                            nail services — where beauty meets precision, and
+                            every detail is designed to elevate your personal
+                            style.
                         </p>
                         <a
                             href="https://www.dashbooking.com/salon/regal-nails-salon-spa-brockville"
@@ -509,4 +511,19 @@
             </div>
         </footer>
     </body>
+    <script>
+        document.querySelectorAll('.work-box-media__img').forEach(img => {
+            img.addEventListener('click', () => {
+                const overlay = document.getElementById('imgOverlay');
+                const overlayImg = document.getElementById('overlayImg');
+                overlayImg.src = img.src;
+                overlay.style.display = 'flex';
+            });
+        });
+    
+        function closeOverlay() {
+            document.getElementById('imgOverlay').style.display = 'none';
+        }
+    </script>
+    
 </html>
