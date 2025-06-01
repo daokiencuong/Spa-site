@@ -101,14 +101,33 @@
         <meta property="og:title" content="Regal Nails & Spa Brockville" />
         <meta
             property="og:description"
-            content="Regal Nails & Spa Brockville"
+            content="Brockville Regal Nails Salon & Spa is
+            founded in 2024, committed to crafting
+            stunning transformations with the power
+            of eco-friendly products and sustainable
+            practices in a clean environment at
+            affordable prices."
         />
-        <meta property="og:image" content="https://example.com/image.jpg" />
-        <meta property="og:image:alt" content="Mô tả của ảnh" />
+        <meta
+            property="og:image"
+            content="./assets/favicon/favicon-96x96.png"
+        />
+        <meta property="og:image:alt" content="Regal Nails & Spa Brockville" />
         <meta name="twitter:title" content="Regal Nails & Spa Brockville" />
-        <meta name="twitter:description" content="Mô tả của trang" />
-        <meta name="twitter:image" content="https://example.com/image.jpg" />
-        <meta name="twitter:image:alt" content="Mô tả của ảnh" />
+        <meta
+            name="twitter:description"
+            content="Brockville Regal Nails Salon & Spa is
+        founded in 2024, committed to crafting
+        stunning transformations with the power
+        of eco-friendly products and sustainable
+        practices in a clean environment at
+        affordable prices."
+        />
+        <meta
+            name="twitter:image"
+            content="./assets/favicon/favicon-96x96.png"
+        />
+        <meta name="twitter:image:alt" content="Regal Nails & Spa Brockville" />
     </head>
     <body>
         <header class="header">
@@ -191,12 +210,12 @@
                             <div class="col-lg-5 col-12">
                                 <div class="hero-media">
                                     <img
-                                        src="./assets/img/demo_2.jpg"
+                                        src="./assets/img/regal_img.jpg"
                                         alt=""
                                         class="hero-media__img"
                                     />
                                     <img
-                                        src="./assets/img/demo_1.jpg"
+                                        src="./assets/img/regal_img2.jpg"
                                         alt=""
                                         class="hero-media__img"
                                     />
@@ -348,7 +367,7 @@
                                 <div class="col-lg-6 col-12">
                                     <div class="work-box-media__item">
                                         <img
-                                            src="./assets/img/regal_img.jpg"
+                                            src="./assets/img/regal_img1.jpg"
                                             alt=""
                                             class="work-box-media__img"
                                         />
@@ -512,18 +531,17 @@
         </footer>
     </body>
     <script>
-        document.querySelectorAll('.work-box-media__img').forEach(img => {
-            img.addEventListener('click', () => {
-                const overlay = document.getElementById('imgOverlay');
-                const overlayImg = document.getElementById('overlayImg');
+        document.querySelectorAll(".work-box-media__img").forEach((img) => {
+            img.addEventListener("click", () => {
+                const overlay = document.getElementById("imgOverlay");
+                const overlayImg = document.getElementById("overlayImg");
                 overlayImg.src = img.src;
-                overlay.style.display = 'flex';
+                overlay.style.display = "flex";
             });
         });
-    
+
         function closeOverlay() {
-            document.getElementById('imgOverlay').style.display = 'none';
+            document.getElementById("imgOverlay").style.display = "none";
         }
     </script>
-    
 </html>
